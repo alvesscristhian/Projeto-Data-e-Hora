@@ -52,7 +52,7 @@ function criaData(data) {
     const ano = data.getFullYear();
     const hora = adicionarZeroAEsquerda(data.getHours());
     const minutos = adicionarZeroAEsquerda(data.getMinutes());
-    const segundos = data.getSeconds();
+    const segundos = adicionarZeroAEsquerda(data.getSeconds());
 
     return `${diaSemanaText}, ${dia} de ${mes} de ${ano}, ${hora}:${minutos}:${segundos}`;
 };
