@@ -52,8 +52,15 @@ function criaData(data) {
     const ano = data.getFullYear();
     const hora = adicionarZeroAEsquerda(data.getHours());
     const minutos = adicionarZeroAEsquerda(data.getMinutes());
+    const segundos = data.getSeconds();
 
-    return `${diaSemanaText}, ${dia} de ${mes} de ${ano}, ${hora}:${minutos}`;
+    return `${diaSemanaText}, ${dia} de ${mes} de ${ano}, ${hora}:${minutos}:${segundos}`;
 };
 
-h1.innerHTML = criaData(data);
+function atualizarHora() {
+    const data = new Date();
+    h1.innerHTML = criaData(data);
+}
+
+setInterval(atualizarHora, 1000);
+atualizarHora();
