@@ -47,7 +47,7 @@ criaData(): Junta tudo e retorna uma string com a data formatada.
 ## 🚀 Como Executar
 Clone este repositório:
 
-git clone https://github.com/seu-usuario/projeto-data-hora.git
+git clone https://github.com/alvesscristhian/ProjetoDataHora.git
 Abra o arquivo index.html em seu navegador.
 
 Nenhuma dependência ou instalação adicional é necessária!
